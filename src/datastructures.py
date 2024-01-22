@@ -44,7 +44,7 @@ class FamilyStructure:
     def add_member(self, member):
         # fill this method and update the return
         # me da la impresion de lo que puedo hacer aca es recibir el objeto con la info del miembro y pues apend a la lista no?
-        member['lastname'] = self.last_name
+        # member['lastname'] = self.last_name HEY CUIDADO ACA
         self._members.append(member)
         
 
@@ -64,4 +64,5 @@ class FamilyStructure:
 
     # this method is done, it returns a list with all the family members
     def get_all_members(self):
+        print(self._members)
         return self._members
